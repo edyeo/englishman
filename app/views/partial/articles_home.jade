@@ -1,0 +1,7 @@
+.row Article list here
+.row
+	.articles-list
+		.row list here!!
+		.div(ng-repeat="article in Article.list" ) 
+			a(ui-sref="articles.practice({ articleId: article.objectId })") Go
+			{{ article.title }}

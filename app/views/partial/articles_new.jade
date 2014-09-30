@@ -1,0 +1,16 @@
+.row
+	.col-xs-6
+		.row
+			.btn.btn-default(ng-click='prettifySource()') Prettify
+		.row
+			input(ng-model="Article.sourceTitle")
+		.row
+			textarea(ng-model="Article.sourceArticle")
+	.col-xs-6
+		.row
+			.btn.btn-default(ng-click='prettifyTarget()') Prettify
+			.btn.btn-default(ng-click='submit()') Submit
+		.row
+			input(ng-model="Article.targetTitle")
+		.row
+			textarea(ng-model="Article.targetArticle")
